@@ -28,6 +28,6 @@ class Boat < ActiveRecord::Base
   end
 
   def self.with_three_classifications
-
+    includes(:classifications)
   end
 end
